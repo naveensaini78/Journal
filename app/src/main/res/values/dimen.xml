@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bPasswordNumberMargin">5dp</dimen>
+    <dimen name="bPasswordNumberWidth">60dp</dimen>
+    <dimen name="bPasswordNumberHeight">60dp</dimen>
+    <dimen name="textSizeOne">10sp</dimen>
+    <dimen name="textSizeOneFive">17sp</dimen>
+    <dimen name="textSizeTwo">20sp</dimen>
+    <dimen name="textSizeThree">30sp</dimen>
+    <dimen name="textSizeThreeFive">35sp</dimen>
+</resources>

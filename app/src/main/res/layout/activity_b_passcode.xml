@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    tools:context=".BPasscodeActivity">
+
+    <LinearLayout
+        android:id="@+id/bPasswordLinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bAppName"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bPasscodeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/textSizeTwo" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/primaryTextColor" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bBackSpaceButton"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:onClick="bBackSpaceClick"
+            android:longClickable="true"
+            app:srcCompat="@drawable/passcode_backspace"
+            android:alpha="0.5" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A/VLog"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/textSizeThree"
+        android:layout_centerHorizontal="true" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/bPasswordNumberGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:columnCount="3"
+        app:rowCount="4"
+        android:layout_below="@+id/bPasswordLinear"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+
+
+        <Button
+            android:layout_width="@dimen/bPasswordNumberWidth"
+            android:layout_height="@dimen/bPasswordNumberHeight"
+            android:text="1"
+            android:onClick="bNumberClick"
+            android:layout_margin="@dimen/bPasswordNumberMargin"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <Button
+            android:layout_width="@dimen/bPasswordNumberWidth"
+            android:layout_height="@dimen/bPasswordNumberHeight"
+            android:text="2"
+            android:onClick="bNumberClick"
+            android:layout_margin="@dimen/bPasswordNumberMargin"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+
+        <Button
+            android:layout_width="@dimen/bPasswordNumberWidth"
+            android:layout_height="@dimen/bPasswordNumberHeight"
+            android:text="3"
+            android:onClick="bNumberClick"
+            android:layout_margin="@dimen/bPasswordNumberMargin"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+
+        <Button
+            android:layout_width="@dimen/bPasswordNumberWidth"
+            android:layout_height="@dimen/bPasswordNumberHeight"
+            android:text="4"
+            android:onClick="bNumberClick"
+            android:layout_margin="@dimen/bPasswordNumberMargin"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+
+        <Button
+            android:layout_width="@dimen/bPasswordNumberWidth"
+            android:layout_height="@dimen/bPasswordNumberHeight"
+            android:text="5"
+            android:onClick="bNumberClick"
+            android:layout_margin="@dimen/bPasswordNumberMargin"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+
+        <Button
+            android:layout_width="@dimen/bPasswordNumberWidth"
+            android:layout_height="@dimen/bPasswordNumberHeight"
+            android:text="6"
+            android:onClick="bNumberClick"
+            android:layout_margin="@dimen/bPasswordNumberMargin"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+
+        <Button
+            android:layout_width="@dimen/bPasswordNumberWidth"
+            android:layout_height="@dimen/bPasswordNumberHeight"
+            android:text="7"
+            android:onClick="bNumberClick"
+            android:layout_margin="@dimen/bPasswordNumberMargin"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+
+        <Button
+            android:layout_width="@dimen/bPasswordNumberWidth"
+            android:layout_height="@dimen/bPasswordNumberHeight"
+            android:text="8"
+            android:onClick="bNumberClick"
+            android:layout_margin="@dimen/bPasswordNumberMargin"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+
+        <Button
+            android:layout_width="@dimen/bPasswordNumberWidth"
+            android:layout_height="@dimen/bPasswordNumberHeight"
+            android:text="9"
+            android:onClick="bNumberClick"
+            android:layout_margin="@dimen/bPasswordNumberMargin"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+
+        <Button
+            android:layout_width="@dimen/bPasswordNumberWidth"
+            android:layout_height="@dimen/bPasswordNumberHeight"
+            android:text="0"
+            android:onClick="bNumberClick"
+            android:layout_margin="@dimen/bPasswordNumberMargin"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/bDoneButton"
+            android:layout_width="@dimen/bPasswordNumberWidth"
+            android:layout_height="@dimen/bPasswordNumberHeight"
+            android:text="Done"
+            android:textSize="@dimen/textSizeOne"
+            android:layout_margin="@dimen/bPasswordNumberMargin"
+            app:layout_column="2"
+            app:layout_row="3"
+            android:visibility="gone" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/bActionTextView"
+        android:layout_below="@+id/bPasswordNumberGrid"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your passcode!!"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/textSizeTwo"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
