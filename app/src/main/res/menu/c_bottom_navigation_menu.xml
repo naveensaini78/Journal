@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/cBottomDailyItem"
+        android:icon="@drawable/daily_bottom"
+        android:title="Daily" />
+
+    <item
+        android:id="@+id/cBottomWeeklyItem"
+        android:icon="@drawable/weekly_bottom"
+        android:title="Weekly" />
+
+    <item
+        android:id="@+id/cBottomMonthlyItem"
+        android:icon="@drawable/monthly_bottom"
+        android:title="Monthly" />
+
+    <item
+        android:id="@+id/cBottomYearlyItem"
+        android:icon="@drawable/yearly_bottom"
+        android:title="Yearly" />
+
+</menu>

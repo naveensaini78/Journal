@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/aLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ABLoginActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/app_icon" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="35sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Please enter your Credentials"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="15sp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/aDPCardView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="false"
+        android:elevation="12dp"
+        android:visibility="gone"
+        app:cardCornerRadius="45dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:elevation="12dp"
+            app:cardCornerRadius="40dp">
+
+
+            <ImageView
+                android:id="@+id/aDPImageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/default_dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="55dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:foreground="@drawable/plus"
+            android:foregroundTint="@color/primaryTextColor"
+            android:onClick="aClickChangeDp"
+            app:srcCompat="@drawable/plus" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <EditText
+        android:id="@+id/aDisplayNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rectangle_border"
+        android:hint="Display Name.."
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textColor="@color/primaryTextColor"
+        android:textColorHint="@color/fadedPrimaryTextColor"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:backgroundTint="@color/fadedPrimaryTextColor" />
+
+
+    <EditText
+        android:id="@+id/aUserNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rectangle_border"
+        android:digits="0123456789.abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:hint="Username..."
+        android:inputType="textFilter"
+        android:paddingLeft="10dp"
+        android:textColor="@color/primaryTextColor"
+        android:textColorHint="@color/fadedPrimaryTextColor"
+        android:textSize="20sp"
+        android:backgroundTint="@color/fadedPrimaryTextColor" />
+
+    <EditText
+        android:id="@+id/aPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rectangle_border"
+        android:hint="Password..."
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textColor="@color/primaryTextColor"
+        android:textColorHint="@color/fadedPrimaryTextColor"
+        android:textSize="20sp"
+        android:backgroundTint="@color/fadedPrimaryTextColor" />
+
+    <Button
+        android:id="@+id/aLoginButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="aClickLogin"
+        android:text="Login" />
+
+
+    <TextView
+        android:id="@+id/aErrorText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Error: One of the fields is empty!!"
+        android:textColor="@color/warningTextColor"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/aToggleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="aClickToggle"
+        android:text="Don't have an account! Create One!"
+        android:textColor="@color/primaryTextColor" />
+
+
+</LinearLayout>

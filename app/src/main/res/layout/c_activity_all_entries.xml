@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cDuoDrawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <nl.psdcompany.duonavigationdrawer.views.DuoMenuView
+        android:id="@+id/cDuoDrawerMenuView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:header="@layout/cb_duodrawer_header"
+        app:footer="@layout/cb_duodrawer_footer"
+        android:tag="menu">
+
+    </nl.psdcompany.duonavigationdrawer.views.DuoMenuView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEEEEE"
+        android:tag="content"
+        tools:context=".CAllEntriesActivity">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/cToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="   All Entries"
+            android:elevation="10dp"
+            app:titleTextColor="@color/primaryTextColor"
+            android:background="@color/colorPrimary"
+            android:theme="@style/Widget.AppCompat.Light.ActionBar"></androidx.appcompat.widget.Toolbar>
+
+
+        <fragment
+            android:id="@+id/cNavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cToolbar"
+            android:layout_above="@+id/cBottomNavBar"
+            app:defaultNavHost="true"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            app:navGraph="@navigation/c_nav_graph"
+            android:layout_marginTop="10dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/cAddEntryFABLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"
+            android:layout_above="@+id/cBottomNavBar">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/cPlusButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:onClick="cPlusClick"
+                android:src="@drawable/plus_thin"
+                android:translationZ="500dp" />
+
+
+        </RelativeLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/cBottomNavBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/c_bottom_navigation_menu"
+            app:elevation="20dp" />
+
+
+    </RelativeLayout>
+
+</nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout>

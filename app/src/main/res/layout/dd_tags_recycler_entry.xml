@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tempddTagREntry">
+
+        <TextView
+            android:id="@+id/ddTagEntryText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:text="Tag name"
+            android:padding="12dp"
+            android:gravity="center_vertical"
+            android:autoSizeTextType="uniform" />
+
+        <CheckBox
+            android:id="@+id/ddTagEntryCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/tempddTagREntry"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blackFadedTextColor"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

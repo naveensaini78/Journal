@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="colorTransparent">#00810000</color>
     <color name="colorPrimary">#810030</color>
+    <color name="colorPrimaryBright">#F30060</color>
+    <color name="colorPrimaryFaded">#66810030</color>
     <color name="colorPrimaryDark">#53001F</color>
     <color name="colorAccent">#810030</color>
     <color name="primaryTextColor">#FFFFFF</color>
+    <color name="fadedPrimaryTextColor">#7EFFFFFF</color>
+    <color name="warningTextColor">#FFC107</color>
     <color name="blackTextColor">#000000</color>
     <color name="blackFadedTextColor">#85000000</color>
 </resources>

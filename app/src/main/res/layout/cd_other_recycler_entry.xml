@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="2dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp">
+
+
+                <TextView
+                    android:id="@+id/cDateText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:autoSizeTextType="uniform"
+                    android:text="April"
+                    android:textColor="@color/blackTextColor"
+                    android:textSize="@dimen/textSizeOne"
+                    android:maxLines="1" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cTitleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start"
+                    android:text="The heading of the Entry. The heading of the Entry. The heading of the Entry"
+                    android:textColor="@color/blackTextColor"
+                    android:autoSizeTextType="uniform"
+                    android:maxLines="1"
+                    android:autoSizeMinTextSize="17sp" />
+
+                <TextView
+                    android:id="@+id/cEntryDemoText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:gravity="start"
+                    android:maxLines="3"
+                    android:text="Hey There I am here to say that I will be very obliged."
+                    android:textColor="@color/blackFadedTextColor"
+                    android:textSize="@dimen/textSizeOneFive" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:background="@drawable/entry_image_border"
+                android:backgroundTint="@color/colorPrimaryFaded"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/cEntryImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/audio_tile" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/cAudioTileLetter"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/textSizeThreeFive" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

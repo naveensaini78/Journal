@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <VideoView
+        android:id="@+id/dVideoView_Audio"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <SeekBar
+        android:id="@+id/dSeekbar_Audio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dBottomLine_Audio" />
+
+    <TextView
+        android:id="@+id/dTimeText_Audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dSeekbar_Audio"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="00:00"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/textSizeTwo" />
+
+
+    <View
+        android:id="@+id/dBottomLine_Audio"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/dVideoView_Audio" />
+
+    <RelativeLayout
+        android:id="@+id/dRecordingButtonsLinear"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/dBottomLine_Audio">
+
+        <TextView
+            android:id="@+id/dRecordingOrPlayingText_Audio"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textSize="@dimen/textSizeTwo" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/dStopButton_Audio"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabCustomSize="40dp"
+            app:srcCompat="@drawable/stop" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/dPausePlayButton_Audio"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:translationZ="100dp"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabCustomSize="50dp"
+            app:srcCompat="@drawable/play" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

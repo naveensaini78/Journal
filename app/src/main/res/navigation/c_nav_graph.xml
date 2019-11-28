@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/c_nav_graph"
+    app:startDestination="@id/cBottomDailyItem"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/cBottomDailyItem"
+        android:name="com.naveensaini.dwintest.CBDailyFragment"
+        android:label="cb_fragment_daily"
+        tools:layout="@layout/cc_fragment_daily" />
+    <fragment
+        android:id="@+id/cBottomWeeklyItem"
+        android:name="com.naveensaini.dwintest.CBWeeklyFragment"
+        android:label="cb_fragment_weekly"
+        tools:layout="@layout/cc_fragment_weekly" />
+    <fragment
+        android:id="@+id/cBottomMonthlyItem"
+        android:name="com.naveensaini.dwintest.CBMonthlyFragment"
+        android:label="cb_fragment_monthly"
+        tools:layout="@layout/cc_fragment_monthly" />
+    <fragment
+        android:id="@+id/cBottomYearlyItem"
+        android:name="com.naveensaini.dwintest.CBYearlyFragment"
+        android:label="cb_fragment_yearly"
+        tools:layout="@layout/cc_fragment_yearly" />
+
+</navigation>

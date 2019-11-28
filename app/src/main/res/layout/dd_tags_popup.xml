@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:elevation="20dp"
+        app:cardCornerRadius="5dp"
+        android:background="@color/primaryTextColor">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/ddTagPopupToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/MyActionBarTheme"
+                android:theme="@style/MyActionBarTheme"
+                android:background="@color/colorPrimary"
+                android:elevation="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:text="Choose Tags :"
+                        android:autoSizeTextType="uniform"
+                        android:gravity="left"
+                        android:textColor="@color/primaryTextColor"
+                        android:padding="15dp" />
+
+                    <ImageView
+                        android:id="@+id/ddPopupAddTagButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/plus"
+                        android:tint="@color/primaryTextColor"
+                        android:padding="12dp"
+                        android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ddTagsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/ddTagPopupToolbar"
+                android:layout_above="@+id/ddPopupDoneButton" />
+
+
+            <TextView
+                android:id="@+id/ddPopupDoneButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:textSize="@dimen/textSizeTwo"
+                android:textColor="@color/blackTextColor"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ripple_effect_background" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

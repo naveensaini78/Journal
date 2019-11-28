@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:elevation="20dp"
+        app:cardCornerRadius="5dp"
+        android:background="@color/primaryTextColor">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tempDeToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                android:elevation="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Add a new Tag"
+                    android:autoSizeTextType="uniform"
+                    android:gravity="left"
+                    android:textColor="@color/primaryTextColor"
+                    android:padding="15dp" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <EditText
+                android:id="@+id/deNewTagEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tempDeToolbar"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:imeOptions="actionDone"
+                android:maxLines="1" />
+
+
+            <TextView
+                android:id="@+id/deNewTagCancleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancle"
+                android:textSize="@dimen/textSizeTwo"
+                android:textColor="@color/blackTextColor"
+                android:layout_toLeftOf="@+id/deNewTagDoneButton"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ripple_effect_background" />
+
+
+            <TextView
+                android:id="@+id/deNewTagDoneButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:textSize="@dimen/textSizeTwo"
+                android:textColor="@color/blackTextColor"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ripple_effect_background" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

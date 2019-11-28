@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/blackTextColor"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <stroke
+                android:color="@color/primaryTextColor"
+                android:width="2dp" />
+            <corners android:radius="10dp" />
+
+        </shape>
+
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="@color/colorPrimaryFaded"
+                android:centerColor="@color/colorTransparent"
+                android:angle="90" />
+            <corners android:radius="10dp" />
+        </shape>
+
+    </item>
+
+</ripple>
+
+

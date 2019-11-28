@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/dVideoRecordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.naveensaini.dwintest.ZZAutoFitTextureView
+            android:id="@+id/dAutoFitTextureView"
+            android:layout_width="match_parent"
+            android:layout_height="800dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_above="@+id/dbVideoOne"
+            android:background="@color/blackFadedTextColor"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!--TextView for Video Quality to be used in future -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text=""
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/textSizeOneFive" />
+
+            <Switch
+                android:id="@+id/dFlashSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="Flash"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/textSizeOneFive"
+                android:thumbTextPadding="10dp" />
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/dbVideoOne"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/dControlLayoutOne_video"
+            android:background="@color/primaryTextColor" />
+
+        <RelativeLayout
+            android:id="@+id/dControlLayoutOne_video"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/blackFadedTextColor">
+
+            <View
+                android:id="@+id/dRecordRing"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ring" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/dVideoRecordButton"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_centerInParent="true"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="33dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/dVideoStopButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="2dp" />
+
+            <TextView
+                android:id="@+id/dVideoSignMarkText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:text="AVLOG"
+                android:textColor="@color/primaryTextColor"
+                android:translationZ="100dp" />
+
+
+            <RelativeLayout
+                android:id="@+id/dPauseResumeLayout_Video"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="60dp"
+                android:layout_toLeftOf="@+id/dRecordRing"
+                android:background="@drawable/ring"
+                android:visibility="gone">
+
+
+                <ImageView
+                    android:id="@+id/dVideoPauseButton"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/pause" />
+
+
+                <ImageView
+                    android:id="@+id/dVideoResumeButton"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="5dp"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/play" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dRotationLayout"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:layout_toRightOf="@+id/dRecordRing"
+                android:background="@drawable/ring">
+
+
+                <ImageView
+                    android:id="@+id/dRotationButton"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:tint="@color/primaryTextColor"
+                    app:srcCompat="@drawable/refresh_button" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

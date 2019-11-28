@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/drawable_rectangular_border">
+
+    <ImageView
+        android:id="@+id/dAudioRecyclerPlay"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/play"
+        android:tint="@color/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/dAudioRecyclerStop"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:src="@drawable/stop"
+        android:tint="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/dAudioRecyclerNameText"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="match_parent"
+        android:autoSizeTextType="uniform"
+        android:text="AudioFile"
+        android:maxLines="1"
+        android:textColor="@color/blackTextColor"
+        android:gravity="center" />
+
+
+    <TextView
+        android:id="@+id/dAudioRecyclerTimerText"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:autoSizeTextType="uniform"
+        android:text="00:00"
+        android:textColor="@color/blackTextColor"
+        android:maxLines="1"
+        android:gravity="center"
+        android:layout_marginRight="10dp" />
+
+
+</LinearLayout>

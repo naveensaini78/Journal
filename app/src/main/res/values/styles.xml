@@ -10,11 +10,28 @@
     </style>
 
 
-    <style name="MyActionBarTheme" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+    <style name="MyActionBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="android:icon">@color/primaryTextColor</item>
-        <item name="android:colorAccent">@color/primaryTextColor</item>
+        <item name="android:colorAccent">@color/colorPrimary</item>
+        <item name="actionBarStyle">@color/colorPrimary</item>
+        <item name="actionBarTheme">@color/colorPrimary</item>
+        <item name="android:actionBarTheme">@color/colorPrimary</item>
+        <item name="android:actionBarStyle">@color/colorPrimary</item>
+
     </style>
+
+
+    <style name="XJToolBarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:colorAccent">@color/colorPrimary</item>
+        <item name="actionBarStyle">@color/colorPrimary</item>
+        <item name="actionBarTheme">@color/colorPrimary</item>
+        <item name="android:actionBarTheme">@color/colorPrimary</item>
+        <item name="android:actionBarStyle">@color/colorPrimary</item>
+
+    </style>
+
 
     <style name="MyNoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->

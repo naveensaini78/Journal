@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/app_background_gradient"
+    android:gravity="center"
+    tools:context=".AASplashActivity">
+
+
+    <TextView
+        android:id="@+id/aTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/monotype_corsiva"
+        android:gravity="center"
+        android:text="D"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="400sp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="50dp" />
+
+
+</RelativeLayout>
+

@@ -1,0 +1,37 @@
+<resources>
+    <!-- Back Camera Quality-->
+    <string-array name="videoBackQualityHeads">
+        <item>Low</item>
+        <item>CIF (288p)</item>
+        <item>480p</item>
+        <item>720p</item>
+        <item>1080p</item>
+        <item>High</item>
+    </string-array>
+
+    <string-array name="videoBackQualityValues">
+        <item>0</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>1</item>
+    </string-array>
+
+    <!-- Front Camera Quality-->
+    <string-array name="videoFrontQualityHeads">
+        <item>CIF (288p)</item>
+        <item>480p</item>
+        <item>720p</item>
+        <item>1080p</item>
+    </string-array>
+
+    <string-array name="videoFrontQualityValues">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+
+</resources>
